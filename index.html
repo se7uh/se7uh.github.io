@@ -1,8 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title class="judul">index v0.3 </title>
+    <style>
+         
+          @keyframes typing {
+      from { width: 0 }
+      to { width: 100vmin }
+      
+    }
+        @keyframes blink {
+          from { border-color: transparent }
+          to { border-color: whitesmoke; }
+        }
+       .t{
+        color: rgb(176, 176, 248);
+       }
+        .effect{
+            overflow: hidden;
+    border-right: .15em solid whitesmoke;
+    white-space: nowrap;
+    font-size: 50px;
+    width: 0;
+    animation: 
+      typing 2s steps(20, end) forwards,
+      blink .8s infinite;
+        }
+      
+        .text{
+            overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: 
+      typing 1s steps(20, end) alternate,
+      blink .8s infinite;
+        }
+        @media screen and (max-width: 600px){
+            .kodekuh{
+            width: 100%;
+        }
+        .blog{
+            width: 100%;
+        }
+        .instagram{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
 <body style="background: black">
-<center><div style="font-size: 50px;
-color: white;
-margin-top: 20%;">
-Masih dalam pengembangan :]
-<div>........</div>
-</div></center>
-</body>
+    <center>
+        <div style="font-size: 22px;
+        color: white;
+        margin-top: 10rem;
+        display: inline-block;
+        width: max-content;"
+        class="text">
+        Website Masih dalam pengembangan :]
+    </div>
+    <br><br>
+    <div class="t">
+        anda masih bisa mengunjungi
+    </div><p></p><br>
+    <div class="divBawah">
+        <a href="http://kodekuh.online" target="_blank" class="kodekuh">Kodekuh</a>
+        <p></p>
+        <a href="https://cyvass.github.io/blog" target="_blank" class="blog">Blog kuh</a>
+        <p></p>
+        <a href="https://instagram.com/cyvas.angin" target="_blank" class="instagram">Instagram</a>
+
+    </div>
+    </center>
+    </body>
+    
+</html>
