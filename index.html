@@ -3,14 +3,15 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="judul">index v0.5 </title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
-        @keyframes typing {
+        /*  @keyframes typing {
             from {
                 width: 0
             }
 
             to {
-                width: 100vmin
+                width: 95mm
             }
 
         }
@@ -23,7 +24,7 @@
             to {
                 border-color: whitesmoke;
             }
-        }
+        } */
 
         a:link {
             text-decoration: none;
@@ -45,27 +46,7 @@
             color: rgb(176, 176, 248);
         }
 
-        .effect {
-            overflow: hidden;
-            border-right: .15em solid whitesmoke;
-            white-space: nowrap;
-            font-size: 50px;
-            width: 0;
-            animation:
-                typing 2s steps(20, end) forwards,
-                blink .8s infinite;
-        }
 
-        .text {
-            overflow: hidden;
-            border-right: .15em solid orange;
-            white-space: nowrap;
-            font-size: 1.6rem;
-            width: 0;
-            animation:
-                typing 1s steps(20, end) alternate,
-                blink .8s infinite;
-        }
 
         @font-face {
             font-family: Cyber;
@@ -83,6 +64,7 @@
             flex-direction: column;
             justify-content: center;
             font-family: 'Cyber', sans-serif;
+            color: whitesmoke;
         }
 
         .cybr-btn {
@@ -353,6 +335,12 @@
             background: var(--primary);
             z-index: -1;
         }
+
+        .bawah {
+            color: whitesmoke;
+            position: absolute;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -361,12 +349,13 @@
         <!-- <button class="cybr-btns">
             <span class="cybr-btn__glitchs">LOVE YOU</span>
         </button> -->
+        <img src="pp.webp" alt="pp gwejh" height="100px" width="100px" style="border-radius: 50%;"><br>
+        <span style="display: inline-block;
+        color: aqua;">Cyvas.Angin</span><span> </span><span style="color: aqua;" class="mov"> </span><br><br>
         <div style="font-size: 22px;
         color: white;
-        margin-top: 5rem;
         display: inline-block;
         width: max-content;" class="text">
-            Website Masih dalam pengembangan :)
         </div>
 
         <br><br>
@@ -377,17 +366,17 @@
         <div class="divBawah">
 
             <button class="cybr-btn">
-                <a href="http://kodekuh.online" target="_blank">Kodekuh</a><span aria-hidden>_</span>
-                <a href="http://kodekuh.online" target="_blank" class="cybr-btn__glitch">Kodekuh</a>
+                <a href="https://kodekuh.online/kodekuh" target="_blank">Kodekuh</a><span aria-hidden>_</span>
+                <a href="https://kodekuh.online/kodekuh" target="_blank" class="cybr-btn__glitch">Kodekuh</a>
 
-                <span aria-hidden class="cybr-btn__tag">V0.5</span>
+                <span aria-hidden class="cybr-btn__tag">V0.2</span>
             </button>
             <p></p>
 
 
             <button class="cybr-btn">
-                <a href="https://cyvass.github.io/blog" target="_blank">Blog kuh</a><span aria-hidden>_</span>
-                <a href="https://cyvass.github.io/blog" target="_blank" class="cybr-btn__glitch">Blog kuh</a>
+                <a href="https://kodekuh.online/blog" target="_blank">Blog kuh</a><span aria-hidden>_</span>
+                <a href="https://kodekuh.online/blog" target="_blank" class="cybr-btn__glitch">Blog kuh</a>
 
                 <span aria-hidden class="cybr-btn__tag">0.32</span>
             </button>
@@ -406,12 +395,28 @@
 
                 <a href="https://instagram.com/cyvas.angin" target="_blank" class="cybr-btn__glitch">Instagram</a>
 
-                <span aria-hidden class="cybr-btn__tag">INS</span>
+                <span aria-hidden class="cybr-btn__tag">IGE</span>
             </button>
-
 
         </div>
     </center>
+    <span class="bawah">lihat kodenya di <a href="http://github.com/cyvass/kodekuh.online" target="_blank" rel="noopener noreferrer">Github</a></span>
+
 </body>
+<script>
+    var typed = new Typed(".mov", {
+        strings: [, "Rasanya Dingin", "Rasanya Adem", "Rasanya Sejuk", "Rasanya Segar", "Rasanya Wenak Pokoke Ya"],
+        typeSpeed: 100,
+        backSpeed: 90,
+        loop: true
+
+    });
+    var typedX = new Typed('.text', {
+        strings: [, 'Website Masih dalam pengembangan :]'],
+        typeSpeed: 15,
+        loop: false,
+        showCursor: false
+    });
+</script>
 
 </html>
