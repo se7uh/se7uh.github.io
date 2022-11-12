@@ -1,35 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="judul">index v0.7.2 </title>
+    <meta name="viewport" content="width=device-width">
+    <title class="judul">index v0.7.3 </title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script async
         src="https://api.countapi.xyz/hit/kodekuh.online/417ecdc7-91c5-435a-865c-bba3fa178a7e?callback=websiteVisits">
     </script>
     <style>
-        /*  @keyframes typing {
-            from {
-                width: 0
-            }
-
-            to {
-                width: 95mm
-            }
-
-        }
-
-        @keyframes blink {
-            from {
-                border-color: transparent
-            }
-
-            to {
-                border-color: whitesmoke;
-            }
-        } */
-
         a:link {
             text-decoration: none;
             color: whitesmoke
@@ -49,8 +28,6 @@
         .t {
             color: rgb(176, 176, 248);
         }
-
-
 
         @font-face {
             font-family: Cyber;
@@ -345,6 +322,16 @@
             position: absolute;
             bottom: 0;
         }
+        .c{
+            color: rgb(10, 10, 10);
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+        .c:hover{
+            color: honeydew;
+            font-size: 40px;
+        }
     </style>
 </head>
 
@@ -371,18 +358,16 @@
         <div class="divBawah">
 
             <button class="cybr-btn">
-                <a href="https://kodekuh.online/kodekuh" target="_blank">Kodekuh</a><span aria-hidden>_</span>
-                <a href="https://kodekuh.online/kodekuh" target="_blank" class="cybr-btn__glitch">Kodekuh</a>
-
+                <a href="https://kodekuh.online/kodekuh/" target="_blank">Kodekuh</a><span aria-hidden>_</span>
+                <a href="https://kodekuh.online/kodekuh/" target="_blank" class="cybr-btn__glitch">Kodekuh</a>
                 <span aria-hidden class="cybr-btn__tag">V0.2</span>
             </button>
             <p></p>
 
 
             <button class="cybr-btn">
-                <a href="https://kodekuh.online/blog" target="_blank">Blog kuh</a><span aria-hidden>_</span>
-                <a href="https://kodekuh.online/blog" target="_blank" class="cybr-btn__glitch">Blog kuh</a>
-
+                <a href="https://kodekuh.online/blog/" target="_blank">Blog kuh</a><span aria-hidden>_</span>
+                <a href="https://kodekuh.online/blog/" target="_blank" class="cybr-btn__glitch">Blog kuh</a>
                 <span aria-hidden class="cybr-btn__tag">0.32</span>
             </button>
             <p></p>
@@ -390,30 +375,24 @@
             <button class="cybr-btn">
                 <a href="https://github.com/cyvass" target="_blank">Github</a><span aria-hidden>_</span>
                 <a href="https://github.com/cyvass" target="_blank" class="cybr-btn__glitch">Github</a>
-
                 <span aria-hidden class="cybr-btn__tag">Git</span>
             </button>
             <p></p>
 
             <button class="cybr-btn">
                 <a href="https://instagram.com/cyvas.angin" target="_blank">Instagram</a><span aria-hidden>_</span>
-
                 <a href="https://instagram.com/cyvas.angin" target="_blank" class="cybr-btn__glitch">Instagram</a>
-
                 <span aria-hidden class="cybr-btn__tag">IGE</span>
             </button>
 
         </div>
     </center>
-    <span style="color: rgb(39, 39, 37);
-    position: absolute;
-        right: 0; bottom: 0;">Telah dikunjungi sebanyak <span id="visits"> </span> kali</span>
-    <!-- Full Tutor : https://medium.com/@codefoxx/how-to-count-the-number-of-visits-on-your-website-with-html-css-javascript-and-the-count-api-2f99b42b5990-->
+    <span class="c">Jumlah Pengunjung <span id="visits"> </span></span>
     <!-- Cara lihat jumlah pengunjung : https://api.countapi.xyz/get/{namespace}/{key} -->
     <!-- Reset jumlah pengunjung : https://api.countapi.xyz/set/{namespace}/{key}?value={whatever you want, most likely 0} -->
+    <!-- Full Tutor : https://medium.com/@codefoxx/how-to-count-the-number-of-visits-on-your-website-with-html-css-javascript-and-the-count-api-2f99b42b5990-->
     <!-- Credit : @codefoxx -->
-    <span class="bawah">lihat kodenya di <a href="http://github.com/cyvass/cyvass.github.io"
-            target="_blank">Github</a></span>
+    <span class="bawah">lihat kodenya di <a href="http://github.com/cyvass/cyvass.github.io" target="_blank">Github</a></span>
 
 </body>
 <script>
@@ -421,9 +400,7 @@
         document.querySelector("#visits").textContent = response.value;
     }
     var typed = new Typed(".mov", {
-        strings: [, "Rasanya Dingin", "Rasanya Adem", "Rasanya Sejuk", "Rasanya Seger",
-            "Rasanya Wenak Pokoke Ya"
-        ],
+        strings: [, "Rasanya Dingin", "Rasanya Adem", "Rasanya Seger", "Rasanya Sejuk", "Rasanya Wenak Pokoke Ya"],
         typeSpeed: 100,
         backSpeed: 90,
         loop: true
