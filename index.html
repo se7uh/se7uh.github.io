@@ -2,7 +2,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width">
-    <title class="judul">index v0.7.4 </title>
+    <title class="judul">index v0.7.6 </title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script async
@@ -321,6 +321,7 @@
         .c:hover{
             color: honeydew;
             font-size: 40px;
+            cursor: default;
         
         }
     </style>
@@ -382,11 +383,11 @@
     <!-- Reset jumlah pengunjung : https://api.countapi.xyz/set/{namespace}/{key}?value={whatever you want, most likely 0} -->
     <!-- Full Tutor : https://medium.com/@codefoxx/how-to-count-the-number-of-visits-on-your-website-with-html-css-javascript-and-the-count-api-2f99b42b5990-->
     <!-- Credit : @codefoxx -->
-    <span class="bawah">lihat kodenya di <a href="http://github.com/cyvass/cyvass.github.io" target="_blank">Github</a></span>
+    <span class="bawah"><a href="http://github.com/cyvass/cyvass.github.io" target="_blank">lihat kodenya di Github</a></span>
 
 </body>
 <script>
-    function websiteVisits(response) {
+     function websiteVisits(response) {
         document.querySelector("#visits").textContent = response.value;
     }
     var typed = new Typed(".mov", {
