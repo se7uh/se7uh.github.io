@@ -10,7 +10,7 @@ btns.forEach((btn) => {
       if (child !== e.target) {
         if (e.target.classList.contains("first")) {
           wingsImg.classList.add("one");
-          wingsImg.style.animationDuration = `1s`;
+          wingsImg.style.animationDuration = `1.5s`;
           wingsImg.style.animationPlayState = `running`;
         } else if (e.target.classList.contains("second")) {
           wingsImg.classList.add("two");
@@ -19,7 +19,7 @@ btns.forEach((btn) => {
         } else if (e.target.classList.contains("third")) {
           wingsImg.classList.add("third");
           wingsImg.style.animationPlayState = `running`;
-          wingsImg.style.animationDuration = `0.1s`;
+          wingsImg.style.animationDuration = `0.01s`;
         } else if (e.target.classList.contains("stop")) {
           wingsImg.classList.add("stop");
           wingsImg.style.animationPlayState = `paused`;
@@ -28,3 +28,4 @@ btns.forEach((btn) => {
     })
   });
 });
+
