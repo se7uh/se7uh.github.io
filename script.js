@@ -3,8 +3,8 @@ function websiteVisits(response) {
 }
 var typed = new Typed(".mov", {
     strings: [, "Rasanya Dingin", "Rasanya Adem", "Rasanya Seger", "Rasanya Sejuk", "Rasanya Wenak Pokoke Ya"],
-    typeSpeed: 100,
-    backSpeed: 90,
+    typeSpeed: 70,
+    backSpeed: 70,
     loop: true
 
 });
