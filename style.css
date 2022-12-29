@@ -6,6 +6,9 @@ a:link {
     text-decoration: none;
     color: whitesmoke
 }
+a:hover{
+    cursor: default;
+}
 .divBawah{
     position: sticky;
     width: max-content;
