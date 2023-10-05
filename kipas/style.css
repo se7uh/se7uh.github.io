@@ -28,7 +28,7 @@ h1{
     overflow: hidden;
   }
   img {
-    width: 99%;
+    width: 400px;
   }
   
   .buttons {
@@ -64,3 +64,10 @@ h1{
     transform: rotate(360deg);
   }
 }
+@media only screen and (max-width: 440px) {
+    .svg img{
+        /* min-width: 320px; */
+        width: 99%;
+    }
+  }
+
