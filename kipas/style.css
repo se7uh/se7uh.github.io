@@ -43,6 +43,7 @@ h1{
       user-select: none;
       border-radius: 5px;
       font-weight: 900;
+      margin-bottom: 15px;
     }
       p:active {
         box-shadow: inset 5px 5px 13px #b6b7b7, inset -5px -5px 13px #e8e9e9;
