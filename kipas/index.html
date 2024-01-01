@@ -18,10 +18,10 @@
         <img class="wings" src="kipas.webp" alt="cyvas-angin">
       </div>
       <div class="buttons" style="text-align: left;">
-        <p class="stop" style="padding-left: 33%;">(0) Mandeg</p>
-        <p class="first" style="padding-left: 33%;">(1) Entukg</p>
-        <p class="second" style="padding-left: 33%;">(2) Lumayan</p>
-        <p class="third" style="padding-left: 33%;">(3) Buanter</p>
+        <p class="stop" id="stop" style="padding-left: 33%;">(0) Mandeg</p>
+        <p class="first" id="first" style="padding-left: 33%;">(1) Entukg</p>
+        <p class="second" id="second" style="padding-left: 33%;">(2) Lumayan</p>
+        <p class="third" id="third" style="padding-left: 33%;">(3) Buanter</p>
       </div>
 
     </div>
@@ -32,13 +32,13 @@
 <script>
   document.addEventListener('keydown', function(event) {
     if (event.key === '0') {
-      document.querySelector('.stop').click();
+      document.getElementById('stop').click();
     } else if (event.key === '1') {
-      document.querySelector('.first').click();
+      document.getElementById('first').click();
     } else if (event.key === '2') {
-      document.querySelector('.second').click();
+      document.getElementById('second').click();
     } else if (event.key === '3') {
-      document.querySelector('.third').click();
+      document.getElementById('third').click();
     }
   });
 </script>
