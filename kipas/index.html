@@ -18,10 +18,10 @@
         <img class="wings" src="kipas.webp" alt="cyvas-angin">
       </div>
       <div class="buttons" style="text-align: left;">
-        <p class="stop" style="padding-left: 33%;" onclick="clickElement(0)">(0) Mandeg</p>
-        <p class="first" style="padding-left: 33%;" onclick="clickElement(1)">(1) Entukg</p>
-        <p class="second" style="padding-left: 33%;" onclick="clickElement(2)">(2) Lumayan</p>
-        <p class="third" style="padding-left: 33%;" onclick="clickElement(3)">(3) Buanter</p>
+        <p class="stop" style="padding-left: 33%;">(0) Mandeg</p>
+        <p class="first" style="padding-left: 33%;">(1) Entukg</p>
+        <p class="second" style="padding-left: 33%;">(2) Lumayan</p>
+        <p class="third" style="padding-left: 33%;">(3) Buanter</p>
       </div>
 
     </div>
@@ -30,23 +30,16 @@
 
 <script src="script.js"></script>
 <script>
-  function clickElement(num) {
-  switch (num) {
-    case 0:
+  document.addEventListener('keydown', function(event) {
+    if (event.key === '0') {
       document.querySelector('.stop').click();
-      break;
-    case 1:
+    } else if (event.key === '1') {
       document.querySelector('.first').click();
-      break;
-    case 2:
+    } else if (event.key === '2') {
       document.querySelector('.second').click();
-      break;
-    case 3:
+    } else if (event.key === '3') {
       document.querySelector('.third').click();
-      break;
-    default:
-      break;
-  }
-}
+    }
+  });
 </script>
 </html>
